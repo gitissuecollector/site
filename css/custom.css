@@ -1,0 +1,46 @@
+nav.white {
+  position: fixed;
+  z-index: 5;
+}
+
+h1.header {
+   margin: 5.1rem 0 1.68rem 0; 
+  font-size: 3.2rem;
+}
+
+.brand-logo, nav ul a {
+  color: #fff !important;
+}
+
+nav.white {
+  background-color: #215EBB !important;
+}
+
+.teal-text.text-lighten-2 {
+  color: #4A4A4A !important;
+}
+
+h5 {
+  font-size: 1.40rem;
+  color: black;
+}
+
+.teal.lighten-1 {
+  background-color: #215EBB !important;
+}
+
+footer.teal {
+  background-color: #215EBB !important;
+}
+
+.brown-text {
+  color: #215EBB !important
+}
+
+.parallax-container {
+  min-height: 360px;
+}
+
+.button-collapse {
+  color: #fff;
+}
