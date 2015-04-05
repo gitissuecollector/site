@@ -13,11 +13,11 @@ h1.header {
 }
 
 nav.white {
-  background-color: #215EBB !important;
+  background-color: rgba(33, 94, 187, 0.97) !important;
 }
 
 .teal-text.text-lighten-2 {
-  color: #4A4A4A !important;
+  color: rgba(0, 0, 0, 0.75) !important;
 }
 
 h5 {
@@ -38,9 +38,26 @@ footer.teal {
 }
 
 .parallax-container {
-  min-height: 360px;
+  min-height: 370px;
 }
 
 .button-collapse {
   color: #fff;
+}
+
+.tabs .tab a {
+  color: #ec407a;
+}
+
+h5.header {
+  color: rgba(0, 0, 0, 0.70);
+}
+
+input[type=text]:focus:not([readonly]) + label {
+  color: rgba(0, 0, 0, 0.87) !important;
+}
+
+input[type=text]:focus:not([readonly]) {
+  border-bottom: 1px solid #ec407a;;
+  box-shadow: 0 1px 0 0 #ec407a;;
 }
