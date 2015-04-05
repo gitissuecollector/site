@@ -13,19 +13,15 @@
 <body>
   <nav class="white" role="navigation">
     <div class="nav-wrapper container">
+
+      <img src="images/logo.png" class="collector-logo">
       <a id="logo-container" href="#" class="brand-logo">GitCollector</a>
 
-
-      <ul class="right hide-on-med-and-down waves-effect waves-light">
-        <li><a href="#">Connect</a></li>
-      </ul>
+ 
       <ul class="right hide-on-med-and-down waves-effect waves-light">
         <li><a href="#starter">Get Started</a></li>
       </ul>
 
-      <ul id="nav-mobile" class="side-nav waves-effect waves-light">
-        <li><a href="#">Connect</a></li>
-      </ul>
       <ul id="nav-mobile" class="side-nav waves-effect waves-light">
         <li><a href="#starter">Get Started</a></li>
       </ul>
@@ -39,24 +35,17 @@
       <div class="container">
         <br><br>
 
-
         <h1 class="header center teal-text text-lighten-2">a simple way to get a feedback tab</h1>
-        
-
+      
         <div class="row center">
           <h5 class="header col s12 light">The visitors clicks on feedback tab, completes the form</h5>
-           <h5 class="header col s12 light">and one issue is created in your Github Repository</h5>
-          
-
+          <h5 class="header col s12 light">and one issue is created in your Github Repository</h5>
         </div>
-
-      
 
         <div class="row center">
           <a href="#starter" id="download-button" class="btn-large waves-effect waves-light teal lighten-1">Get Started</a>
         </div>
         <br><br>
-
       </div>
     </div>
 
@@ -144,12 +133,12 @@
               <br>
               <div class="row">
                 <div class="input-field col s6">
-                  <input id="last_name" type="text" class="validate">
-                  <label for="last_name">GitHub Username</label>
+                  <input id="git_username" type="text" class="validate">
+                  <label for="git_username">GitHub Username</label>
                 </div>
                 <div class="input-field col s6">
-                  <input id="last_name" type="text" class="validate">
-                  <label for="last_name">Name of Github Repository</label>
+                  <input id="git_repo" type="text" class="validate">
+                  <label for="git_repo">Name of Github Repository</label>
                 </div>
               </div>
 
@@ -162,13 +151,20 @@
               <h5 class="header">Create & Customize the look and feel for your Button</h5>
               <br>
               <div class="row">
-                <div class="input-field col s6">
-                  <input id="last_name" type="text" class="validate">
-                  <label for="last_name">GitHub Username</label>
+                <div class="input-field col s12">
+                  <input id="tab_text" type="text" class="validate" value="Send feedback">
+                  <label for="tab_text">Define text for Feedback Tab Button</label>
                 </div>
-                <div class="input-field col s6">
-                  <input id="last_name" type="text" class="validate">
-                  <label for="last_name">Name of Github Repository</label>
+
+                <div class="col s12">
+                  <div class="card-panel grey lighten-5 z-depth-1">
+                    <h5> Button Preview </h5>
+                    <div class="row center">
+                      <a href="" id="user_button" class="btn-large waves-effect waves-light teal lighten-1">
+                        Send feedback
+                      </a>
+                    </div>
+                  </div>
                 </div>
               </div>
 
@@ -182,10 +178,9 @@
             </div>
 
              <div id="test3" class="col s12">
-              <h5 class="header">Copy the following code and paste it in your site</h5>
+              <h5 class="header">Copy the following code and paste in your website</h5>
               <br>
-              <div class="row">
-                
+              <div class="row">          
               </div>
             </div>
 

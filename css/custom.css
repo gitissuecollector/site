@@ -1,3 +1,9 @@
+img.collector-logo {
+  width: 40px;
+  margin-top: 12px;
+  margin-right: 10px;
+}
+
 nav.white {
   position: fixed;
   z-index: 5;
