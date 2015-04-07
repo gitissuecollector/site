@@ -1,0 +1,69 @@
+img.collector-logo {
+  width: 40px;
+  margin-top: 12px;
+  margin-right: 10px;
+}
+
+nav.white {
+  position: fixed;
+  z-index: 5;
+}
+
+h1.header {
+   margin: 5.1rem 0 1.68rem 0; 
+  font-size: 3.2rem;
+}
+
+.brand-logo, nav ul a {
+  color: #fff !important;
+}
+
+nav.white {
+  background-color: rgba(33, 94, 187, 0.97) !important;
+}
+
+.teal-text.text-lighten-2 {
+  color: rgba(0, 0, 0, 0.75) !important;
+}
+
+h5 {
+  font-size: 1.40rem;
+  color: black;
+}
+
+.teal.lighten-1 {
+  background-color: #215EBB !important;
+}
+
+footer.teal {
+  background-color: #215EBB !important;
+}
+
+.brown-text {
+  color: #215EBB !important
+}
+
+.parallax-container {
+  min-height: 370px;
+}
+
+.button-collapse {
+  color: #fff;
+}
+
+.tabs .tab a {
+  color: #ec407a;
+}
+
+h5.header {
+  color: rgba(0, 0, 0, 0.70);
+}
+
+input[type=text]:focus:not([readonly]) + label {
+  color: rgba(0, 0, 0, 0.87) !important;
+}
+
+input[type=text]:focus:not([readonly]) {
+  border-bottom: 1px solid #ec407a;;
+  box-shadow: 0 1px 0 0 #ec407a;;
+}
