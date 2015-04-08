@@ -10,7 +10,7 @@ nav.white {
 }
 
 h1.header {
-   margin: 5.1rem 0 1.68rem 0; 
+  margin: 5.1rem 0 1.68rem 0; 
   font-size: 3.2rem;
 }
 
@@ -44,7 +44,7 @@ footer.teal {
 }
 
 .parallax-container {
-  min-height: 370px;
+  min-height: 350px;
 }
 
 .button-collapse {
