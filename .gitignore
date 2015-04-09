@@ -1,0 +1,4 @@
+node_modules/*
+js/compiled/*
+.DS_*
+*.log
