@@ -64,6 +64,6 @@ input[type=text]:focus:not([readonly]) + label {
 }
 
 input[type=text]:focus:not([readonly]) {
-  border-bottom: 1px solid #ec407a;;
-  box-shadow: 0 1px 0 0 #ec407a;;
+  border-bottom: 1px solid #ec407a;
+  box-shadow: 0 1px 0 0 #ec407a;
 }
