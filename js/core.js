@@ -18,13 +18,19 @@ var HomeView = Backbone.View.extend(
 var ModalView = Backbone.View.extend(
 {
 	el: 'body',
-	initialize: function(user, repo)
+	initialize: function(user, repo, custom)
 	{
-		this.render(user, repo);
+		this.render(user, repo, custom);
 	},
-	render: function(user, repo)
+	render: function(user, repo, custom)
 	{
-		this.$el.html(getTemplate('templates/modal.html'));
+		var data = {
+			"user" : user, 
+			"repo" : repo, 
+			"custom" : '#' + custom
+		};
+
+		this.$el.html(getTemplate('templates/modal.html', data));
 	}
 });
 
@@ -37,9 +43,9 @@ var Router = Backbone.Router.extend (
 				var home = new HomeView();
 			},
 
-			'(:user/:repo)' : function (user, repo) 
+			'(:user/:repo/:custom)' : function(user, repo, custom) 
 			{
-				var modal = new ModalView(user, repo);	
+				var modal = new ModalView(user, repo, custom);	
 			}
 		} 
 	}
