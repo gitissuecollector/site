@@ -66,7 +66,7 @@
           <h4>Get Started, easy setup!</h4>
 
           <p class="left-align light">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque id nunc nec volutpat. Etiam pellentesque tristique arcu, non consequat magna fermentum ac. Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+ 
           </p>
 
           <div class="row">
@@ -74,12 +74,12 @@
               <ul class="tabs">
                 <li class="tab col s3"><a class="active" href="#test1"><i class="mdi-image-looks-one"></i> SET REPOSITORY</a></li>
                 <li class="tab col s3"><a href="#test2"><i class="mdi-image-looks-two"></i> CREATE BUTTON</a></li>
-                <li class="tab col s3"><a href="#test3"><i class="mdi-image-looks-3"></i> GET THE CODE</a></li>
+                <li class="tab col s3"><a href="#test3"><i class="mdi-image-looks-3"></i> GET CODE</a></li>
               </ul>
             </div>
 
             <div id="test1" class="col s12">
-              <h5 class="header">Enter your Git Username and the name of target Repository</h5>
+              <h5 class="header">Enter your Git username and the name of the target repository</h5>
               <br>
               <div class="row">
                 <div class="input-field col s6">
@@ -100,22 +100,37 @@
             <div id="test2" class="col s12">
               <h5 class="header">Create & Customize the look and feel for the Button</h5>
               <br>
+
+
               <div class="row">
-                <div class="input-field col s12">
-                  <input id="tab_text" type="text" class="validate" value="Send feedback">
-                  <label for="tab_text">Set display text for Feedback Tab Button</label>
+                <div class="card-panel grey lighten-5 z-depth-1 col s12">
+
+                  <div class="col s6">
+  
+                    <div class="input-field col s12">
+                      <input id="tab_text" type="text" class="validate" value="Send feedback">
+                      <label for="tab_text">Set display text for Feedback Tab Button</label>
+                    </div>
+
+                    <div class="buttonColor left">
+                      Set Button Color
+                      <input type='text' id="colorpicker"/>
+                    </div>
+
+                  </div>
+
+                  <div class="col s6">
+
+                      <h5> Button Preview </h5>
+                      <div class="row center">
+                        <a href="#!" id="user_button" class="btn-large waves-effect waves-light teal lighten-1">
+                          Send feedback
+                        </a>
+                      </div>
+                  </div>
+
                 </div>
 
-                <div class="col s12">
-                  <div class="card-panel grey lighten-5 z-depth-1">
-                    <h5> Button Preview </h5>
-                    <div class="row center">
-                      <a href="#!" id="user_button" class="btn-large waves-effect waves-light teal lighten-1">
-                        Send feedback
-                      </a>
-                    </div>
-                  </div>
-                </div>
               </div>
 
               <button class="btn pink lighten-1 waves-effect waves-light left" type="submit" name="action">
@@ -142,7 +157,6 @@
 
     </div>
   </div>
-
 
 
   <footer class="page-footer teal">

@@ -19,8 +19,8 @@ module.exports = function(grunt) {
   uglify: {
     minJS: {
       files: {
-        'js/compiled/base.min.js': ['js/base/materialize.min.js', 'js/base/init.js'],
-        'js/compiled/app.min.js' : ['js/compiled/templates.js', 'js/core.js'],
+        'js/compiled/base.min.js': ['js/base/materialize.min.js', 'js/base/init.js', 'js/base/spectrum.js'],
+        'js/compiled/app.min.js' : ['js/compiled/templates.js', 'js/binds.js', 'js/core.js'],
       }
     }, 
   },

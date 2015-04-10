@@ -1,7 +1,3 @@
-function getTemplate(templatePath, data) {
-	return window['JST'][templatePath](data);
-}
-
 var HomeView = Backbone.View.extend(
 {
 	el: 'body',
@@ -41,6 +37,7 @@ var Router = Backbone.Router.extend (
 			'' : function () 
 			{
 				var home = new HomeView();
+				homeBinds();
 			},
 
 			'(:user/:repo/:custom)' : function(user, repo, custom) 
