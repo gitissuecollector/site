@@ -68,8 +68,9 @@ input[type=text]:focus:not([readonly]) {
   box-shadow: 0 1px 0 0 #ec407a;
 }
 
-div.buttonColor {
+div.buttonColor, div.buttonColorText {
   margin-left: 11px;
+  margin-bottom: 8px;
 }
 
 .sp-container {
@@ -106,4 +107,13 @@ div.buttonColor {
 
 .sp-cancel {
   color: #ec407a !important;
+}
+
+.sp-replacer {
+  background: #FAFAFA;
+  border-color: black;
+}
+
+.sp-replacer:hover,  .sp-replacer.sp-active {
+  border-color: black;
 }

@@ -74,7 +74,7 @@
               <ul class="tabs">
                 <li class="tab col s3"><a class="active" href="#test1"><i class="mdi-image-looks-one"></i> SET REPOSITORY</a></li>
                 <li class="tab col s3"><a href="#test2"><i class="mdi-image-looks-two"></i> CREATE BUTTON</a></li>
-                <li class="tab col s3"><a href="#test3"><i class="mdi-image-looks-3"></i> GET CODE</a></li>
+                <li class="tab col s3" id="tabCode"><a href="#test3"><i class="mdi-image-looks-3"></i> GET CODE</a></li>
               </ul>
             </div>
 
@@ -112,8 +112,13 @@
                       <label for="tab_text">Set display text for Feedback Tab Button</label>
                     </div>
 
+                    <div class="buttonColorText left">
+                      Choose Text color
+                      <input type='text' id="colorpickerText"/>
+                    </div>
+
                     <div class="buttonColor left">
-                      Set Button Color
+                      Choose Button color
                       <input type='text' id="colorpicker"/>
                     </div>
 
@@ -145,7 +150,8 @@
              <div id="test3" class="col s12">
               <h5 class="header">Copy the following code and paste in your website</h5>
               <br>
-              <div class="row">          
+              <div class="row">
+                <pre><code id="collectorCode"></code><pre>
               </div>
             </div>
 
