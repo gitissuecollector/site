@@ -74,8 +74,56 @@ function homeBinds()
 		collectorCustom.repo = $(this).val();
 	});
 
+	$('#next1').click(function() {
+		if (collectorCustom.user != '' && collectorCustom.repo != '') {
+			$('#tabColor > a').click();
+		}
+	});
+
+	$('#next2').click(function() {
+		if (collectorCustom.colorText != '' && collectorCustom.colorBack != '' && collectorCustom.text != '') {
+			$('#tabCode > a').click();
+		}
+	});
+
+	$('#back1').click(function() {
+		$('#tabRepo > a').click();
+	});
+
 	$('#tabCode').click(function() {
-		$('#collectorCode').html(JSON.stringify(collectorCustom));
+
+		$('#collectorCode').text('');
+
+		var source = "
+<script type='text/javascript'>
+    window.gcAsyncInit = function () {
+        window.feedback = new GitCollector({
+            username: '{{username}}',
+            repository: '{{repo}}',
+            color: '{{color}}',
+            textColor: '{{textColor}}',
+            text: '{{text}}'
+        });
+    };
+    (function () {
+        var s = document.createElement('script');
+        s.type = 'text/javascript';
+        s.async = true;
+        s.src = 'http://gitcollector.com/js/compiled/GitCollector.min.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0] || document.getElementsByTagName('script')[0].parentNode).insertBefore(s, null);
+    })();
+</script>
+	";
+
+		source = source.replace("{{username}}", collectorCustom.user);
+		source = source.replace("{{repo}}", collectorCustom.repo);
+		source = source.replace("{{color}}", collectorCustom.colorBack);
+		source = source.replace("{{textColor}}", collectorCustom.colorText);
+		source = source.replace("{{text}}", collectorCustom.text);
+		source = source.replace("#", "");
+		source = source.replace("#", "");
+
+		$('#collectorCode').text(source);
 		doHighlight();
 	});
 }

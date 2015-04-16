@@ -117,3 +117,7 @@ div.buttonColor, div.buttonColorText {
 .sp-replacer:hover,  .sp-replacer.sp-active {
   border-color: black;
 }
+
+.hljs {
+  text-align: left !important;
+}
