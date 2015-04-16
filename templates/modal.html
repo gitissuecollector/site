@@ -1,38 +1,39 @@
 <style type="text/css">
 .input-field .prefix.active {
-  color: black;
+  color: <%= obj.colorB %>;
 }
 
 input[type=text]:focus:not([readonly]) {
-  border-bottom: 1px solid <%= obj.custom %>;
-  box-shadow: 0 1px 0 0 <%= obj.custom %>;
+  border-bottom: 1px solid <%= obj.colorB %>;
+  box-shadow: 0 1px 0 0 <%= obj.colorB %>;
 }
 
 input[type=email]:focus:not([readonly]) {
-  border-bottom: 1px solid <%= obj.custom %>;
-  box-shadow: 0 1px 0 0 <%= obj.custom %>;
+  border-bottom: 1px solid <%= obj.colorB %>;
+  box-shadow: 0 1px 0 0 <%= obj.colorB %>;
 }
 
 textarea.materialize-textarea:focus:not([readonly]) {
-  border-bottom: 1px solid  <%= obj.custom %>;
-  box-shadow: 0 1px 0 0  <%= obj.custom %>;
+  border-bottom: 1px solid  <%= obj.colorB %>;
+  box-shadow: 0 1px 0 0  <%= obj.colorB %>;
 }
 
 input[type=email]:focus:not([readonly]) + label {
-  color: black;
+  color: <%= obj.colorB %>;
 }
 
 textarea.materialize-textarea:focus:not([readonly]) + label {
-  color: black;
+  color: <%= obj.colorB %>;
 }
 
 .headFoot {
-    border-top: 1px solid <%= obj.custom %>;
+    border-top: 1px solid <%= obj.colorB %>;
 }
 
 #sendButton {
-  background-color:  <%= obj.custom %> !important;
+  background-color:  <%= obj.colorB %> !important;
   margin-right: 20px !important;
+  color: <%= obj.colorT %> !important;
 }
 
 </style>
@@ -44,7 +45,7 @@ textarea.materialize-textarea:focus:not([readonly]) + label {
     <div class="row center">
 
 
-      <h4 style="padding:4px;background-color:<%= obj.custom %>;color: white;margin-top:0px;">Send Feedback</h4>
+      <h4 style="padding:4px;background-color:<%= obj.colorB %>;color:<%= obj.colorT %> !important;margin-top:0px;">Send Feedback</h4>
 
       <div class="row">
         <form class="col s12">
